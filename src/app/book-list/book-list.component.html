@@ -1,0 +1,23 @@
+
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+<!--        <th scope="col"></th>-->
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.id }}</td>
+        <td>{{ book.title }}</td>
+        <td>{{ book.authorName }}</td>
+<!--        <td><img src="./assets/worm.png" width="40" height="40" alt="" class="img-fluid"></td>-->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
